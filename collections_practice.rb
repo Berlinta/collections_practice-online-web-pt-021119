@@ -43,16 +43,6 @@ def sum_array(array)
   array.inject(0){ |n,b| n + b } #(0) is a base case so it doesnt nil
 end
   
-# def add_s(array)
-#   array.collect do |word|
-#     if array[1] == word
-#       word
-#     else
-#       word + "s"
-#     end
-#   end
-# end
-
 def add_s(array)
   array.each_with_index.collect do |word|
     if array[1] == word
@@ -62,13 +52,3 @@ def add_s(array)
     end
   end
 end
-
-
-
-
-
-
-
-
-
-
