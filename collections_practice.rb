@@ -33,8 +33,6 @@ def kesha_maker(strings)
   new_str
 end
 
-# expect(kesha_maker(["blake", "ashley", "scott"])).to eq(["bl$ke", "as$ley", "sc$tt"])
-
 def find_a(array)
   array.select { |letter| letter.start_with?('a') }
 end
