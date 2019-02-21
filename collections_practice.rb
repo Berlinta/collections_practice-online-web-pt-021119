@@ -54,9 +54,14 @@ end
 # end
 
 def add_s(array)
-  array[1].collect { |word| if array[1] == word puts word else word +"s" }
+  array.each_with_index.collect do |word|
+    if array[1] == word
+      word
+    else
+      word + "s"
+    end
+  end
 end
-  
 
 
 
